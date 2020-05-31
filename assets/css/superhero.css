@@ -1,0 +1,24 @@
+.img-container{
+
+     height: 60vh;
+     width: 75vh;
+     position: relative;
+     left: 30%;
+}
+.img-container img {
+
+      height: 100%;
+      width: 100%;
+}
+
+.img-info {
+
+    /* border: 1px solid black; */
+    width: 100%;
+    text-align: center;
+}
+span{
+
+    font-weight: bold;
+    color: blue;
+}
