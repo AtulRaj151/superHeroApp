@@ -47,7 +47,7 @@ function fetchDetailsId(id){
            displaySuperHeroPage(infoJSON);
     }
 
-    xhrRequest.open('GET', `http://superheroapi.com/api/936106680158599/${id}`);
+    xhrRequest.open('GET', `https://superheroapi.com/api/936106680158599/${id}`);
     xhrRequest.send();
 
     
