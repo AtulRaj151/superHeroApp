@@ -174,4 +174,44 @@ function initEventListener(){
 
 initEventListener();
 
+const Heros = [
+     {name: 'spiderman'},
+     {name: 'batman'},
+     {name: 'thor'},
+     {name: 'ironman'}
+   ];
+   const suggestionsPanel = document.querySelector('.suggestions');
+function suggest(){
+  
+   
+   inputText.addEventListener('keyup', function() {
+     const input = inputText.value;
+     suggestionsPanel.innerHTML = '';
+     const suggestions = Heros.filter(function(country) {
+       return country.name.toLowerCase().startsWith(input);
+     });
+     suggestions.forEach(function(suggested) {
+       const div = document.createElement('div');
+       div.innerHTML = suggested.name;
+       suggestionsPanel.appendChild(div);
+        div.addEventListener('click',function(e){
+          //    console.log("clicked div")
+               let val =  document.querySelector('.suggestions div').innerHTML;
+               // console.log(val);
+               inputText.value = '';
+               inputText.value= val;
+
+        });
+     });
+     if (input === '') {
+       suggestionsPanel.innerHTML = '';  
+     }
+   })
+}
+suggest();
+   
+   
+   
+   
+
 
