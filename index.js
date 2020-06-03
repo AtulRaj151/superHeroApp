@@ -187,8 +187,8 @@ function suggest(){
    inputText.addEventListener('keyup', function() {
      const input = inputText.value;
      suggestionsPanel.innerHTML = '';
-     const suggestions = Heros.filter(function(country) {
-       return country.name.toLowerCase().startsWith(input);
+     const suggestions = Heros.filter(function(hero) {
+       return hero.name.toLowerCase().startsWith(input);
      });
      suggestions.forEach(function(suggested) {
        const div = document.createElement('div');
