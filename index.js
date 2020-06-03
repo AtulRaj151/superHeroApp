@@ -178,7 +178,9 @@ const Heros = [
      {name: 'spiderman'},
      {name: 'batman'},
      {name: 'thor'},
-     {name: 'ironman'}
+     {name: 'ironman'},
+      {name: 'captain'},
+      {name: 'hulk'}
    ];
    const suggestionsPanel = document.querySelector('.suggestions');
 function suggest(){
